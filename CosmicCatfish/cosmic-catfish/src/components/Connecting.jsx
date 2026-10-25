@@ -1,0 +1,52 @@
+import { useNavigate, useLocation } from "react-router-dom";
+import AlienVisuals from "./AlienVisuals";
+import "./datingApp.css";
+import "./Connecting.css";
+
+export default function Connecting() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const currentAlien = location.state?.alien;
+
+  function handleLike() {
+    if (!currentAlien) return;
+
+    const chatID = currentAlien.id === "Alien3" ? "Zorp" : currentAlien.id;
+
+    navigate(`/chat/${chatID}`);
+  }
+
+  function handlePass() {
+    navigate("/dating");
+  }
+
+  return (
+    <main className="dating-page">
+      <section className="phone-frame">
+        <div className="connecting-screen phone-screen">
+          <h1>Tinderstellar</h1>
+          <h4>Find your cosmic connection</h4>
+
+          <div className="alien-picture">
+            <AlienVisuals alien={currentAlien} />
+          </div>
+
+          <div className="profile-details">
+            <h1>You got a match!</h1>
+            <p>Go on date?</p>
+          </div>
+
+          <div className="dating-actions">
+            <button className="like-button" onClick={handleLike}>
+              ♥
+            </button>
+            <button className="pass-button" onClick={handlePass}>
+              X
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

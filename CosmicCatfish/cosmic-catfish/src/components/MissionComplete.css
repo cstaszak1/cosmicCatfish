@@ -1,0 +1,119 @@
+.mission-page {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/space.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.mission-dashboard {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-dashboard > h1 {
+  color: #76e7ac;
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.mission-dashboard h2 {
+  font-size: 35px;
+}
+
+.mission-agency {
+  color: #9eabc5;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.planet-cards {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.planet-card {
+  flex: 1;
+  background-color: #192b37;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.planet {
+  height: 250px;
+  width: 325px;
+}
+
+.mars-card h3 {
+  color: #76e7ac;
+}
+
+.venus-card {
+  background-color: #30212c;
+}
+
+.venus-card h3 {
+  color: #ff9999;
+}
+
+.survival-section {
+  background-color: #262f5b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.survival-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.survival-button {
+  background-color: #3e5976;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.survival-button span {
+  font-size: 26px;
+}
+
+.survival-button p {
+  margin: 5px 0 0;
+}
+
+.survival-button.active {
+  border-color: #3cb5c8;
+  background-color: #314e70;
+}
+
+.survival-description {
+  background-color: #314e70;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+}
+
+.end-button {
+  display: inline-block;
+  padding: 13px 35px;
+  background-color: #ec4899;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.end-button:hover {
+  background-color: #db2777;
+}

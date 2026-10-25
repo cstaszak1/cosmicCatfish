@@ -1,0 +1,98 @@
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.backstory {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #080819;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+  color: white;
+  font-family: "Pixelify Sans Variable", sans-serif;
+}
+
+.story-scene {
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+}
+
+.story-scene h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 12px #ec4899;
+}
+
+.story-year {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 12px #9ec3e8;
+}
+
+.story-year h1 {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 12px #ec4899;
+}
+
+.story-open {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px #3c9dff;
+}
+
+.story-paragraph {
+  color: white;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 18px 0;
+}
+
+.story-org {
+  margin-top: 30px;
+  text-align: center;
+}
+.story-org h2 {
+  font-family: "Pixelify Sans Variable", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 12px #ec4899;
+}
+
+.story-button {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #ec4899;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  margin-top: 25px;
+}
+
+.story-button:hover {
+  background-color: #db2777;
+}

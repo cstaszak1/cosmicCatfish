@@ -1,0 +1,33 @@
+{
+  "Profiles": {
+    "Alien": {
+      "name": "Beepboopba",
+      "age": "2.1 million years",
+      "job": "Mother Ship Driver",
+      "interestedIn": "Someone who does well under pressure",
+      "hobbies": "asteroid collector, Star gazing, visiting Saturn's rings",
+      "planet": "Mars",
+      "BIO": "Easy going and looking for the same. Want someone to galaxy hop and work on my ship with",
+      "image": "../alien1.webp"
+    },
+    "Alien2": {
+      "name": "Leaploopla",
+      "age": "1 billion years",
+      "job": "Radiation collector",
+      "interestedIn": "Someone who can handle the heat",
+      "hobbies": "Comet surfing, planet exploration, walking my alien-dog",
+      "planet": "Venus",
+      "BIO": "Hot and feisty. Looking for someone to planet hop with and experience the different atmospheres...or none. ",
+      "image": "../alien2.jpg"
+    },
+    "Alien3": {
+      "name": "Zorp",
+      "age": "500 thousand years",
+      "job": "Comet farmer",
+      "interestedIn": "Long term, stable connection. I want to find true love.",
+      "hobbies": "Spaceship spotting,hunting for physical human items, decoding other galactic languages",
+      "planet": "Mars",
+      "BIO": "Down to Mars being who enjoys peaceful walks, meaningful connection, and making the most of this life. "
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "Alien2": {
+    "start": {
+      "text": "Hi. Super excited to have matched with you most people skip when they realize how hot it is.",
+      "choices": [
+        {
+          "text": "I thought venus was supposed to be earths sister planet",
+          "next": "sister"
+        },
+        {
+          "text": "I actually really enjoy the heat so much better than it being cold",
+          "next": "Weather"
+        }
+      ]
+    },
+    "sister": {
+      "ending": "bad",
+      "text": "Sister Planet? The temperature and pressure are astronomically different. You are sounding like an earth dweller, bye"
+    },
+    "Weather": {
+      "text": "That's good to hear. The average temperature here is around 467c and the CO2 in the atmosphere makes it even hotter.",
+      "choices": [
+        {
+          "text": "Thats so cool. We should try plant a garden together",
+          "next": "crop"
+        },
+        {
+          "text": "Wow that's so cool. Hows the pressure out there",
+          "next": "pressure"
+        }
+      ]
+    },
+    "crop": {
+      "ending": "bad",
+      "text": "Were you even listening to me. Its way to hot to grow anything here unless you're in a dome. Goodbye"
+    },
+    "pressure": {
+      "text": "Glad you think so. The pressure out here is super intense but manageable for other aliens if you have a suit",
+      "choices": [
+        {
+          "text": "Oh that's very interesting. Gravity must be pretty high then as well",
+          "next": "gravity"
+        },
+        {
+          "text": "That's so interesting. Do you think humans would be able to acclimate to the gravity there",
+          "next": "humans"
+        }
+      ]
+    },
+    "humans": {
+      "ending": "bad",
+      "text": "Only a human would ask me a question like that. Im leaving"
+    },
+    "gravity": {
+      "text": "You would think right? Actually gravity is only 8.87 which is way to close to the gravity of that rock people call earth, if you ask me.",
+      "choices": [
+        {
+          "text": "You're right about that. I heard humans need water as well",
+          "next": "Water"
+        },
+        { "text": "Whats so wrong with earth?", "next": "earthling" }
+      ]
+    },
+    "earthling": {
+      "ending": "bad",
+      "text": "Only an earthling would try to defend that floating rock. I'm reporting you"
+    },
+    "Water": {
+      "ending": "good",
+      "text": "Haha i heard the same thing. Good thing the only water we have here is vapor in the air"
+    }
+  },
+  "Alien": {
+    "start": {
+      "text": "Hi. Super excited to have matched with you most people skip when they realize im a martian.",
+      "choices": [
+        {
+          "text": "I thought martians was supposed to be closest to humans",
+          "next": "sister"
+        },
+        {
+          "text": "I actually really like martians, y'all are the coolest and not just because mars is so cold",
+          "next": "Weather"
+        }
+      ]
+    },
+    "sister": {
+      "ending": "bad",
+      "text": "How dare you compare us to humans im blocking you"
+    },
+    "Weather": {
+      "text": "Haha your not wrong about that. Its usually in the -60c but during the summer the its around 30c",
+      "choices": [
+        {
+          "text": "That's so cool. We should try plant a garden together",
+          "next": "crop"
+        },
+        {
+          "text": "Wow that's so cool. Hows the pressure out there",
+          "next": "pressure"
+        }
+      ]
+    },
+    "crop": {
+      "ending": "bad",
+      "text": "Were you even listening to me. Its way to cold to grow anything here unless you're in a dome. Goodbye"
+    },
+    "pressure": {
+      "text": "Glad you think so. The pressure out here is super intense but manageable for other aliens if you have a suit",
+      "choices": [
+        {
+          "text": "Oh that's very interesting. Gravity must be pretty high then as well",
+          "next": "gravity"
+        },
+        {
+          "text": "That's so interesting. Do you think humans would be able to acclimate to the gravity there",
+          "next": "humans"
+        }
+      ]
+    },
+    "humans": {
+      "ending": "bad",
+      "text": "Only a human would ask me a question like that. Im leaving"
+    },
+    "gravity": {
+      "text": "You would think right? Actually gravity is only 3.37 so everything is pretty light here.",
+      "choices": [
+        {
+          "text": "wow i suppose everything would be pretty light at that gravity. Does water just float around everywhere haha",
+          "next": "Water"
+        },
+        {
+          "text": "Wow that's way less than the gravity you would experience on earth",
+          "next": "earthling"
+        }
+      ]
+    },
+    "earthling": {
+      "ending": "bad",
+      "text": "Only an earthling would know so much about it bye."
+    },
+    "Water": {
+      "ending": "good",
+      "text": "Haha that would be cool ,but no all the water here is frozen underground."
+    }
+  },
+  "Zorp": {
+    "start": {
+      "text": "Hi. Super excited to have matched with you im probably the most laid back martian you will come across",
+      "choices": [
+        {
+          "text": "I thought martians was supposed to be closest to humans",
+          "next": "sister"
+        },
+        {
+          "text": "I actually really like martians, y'all are the coolest and not just because mars is so cold",
+          "next": "Weather"
+        }
+      ]
+    },
+    "sister": {
+      "ending": "bad",
+      "text": "Sorry youre giving human vibes im gonna have to leave"
+    },
+    "Weather": {
+      "text": "Haha your not wrong about that. Its usually in the -60c but during the summer the its around 30c",
+      "choices": [
+        {
+          "text": "That's so cool. We should try plant a garden together",
+          "next": "crop"
+        },
+        {
+          "text": "Wow that's so cool. Hows the pressure out there",
+          "next": "pressure"
+        }
+      ]
+    },
+    "crop": {
+      "ending": "bad",
+      "text": "I love your atituide but its way to cold up here for that idea i think its best we go our seperate ways"
+    },
+    "pressure": {
+      "text": "Glad you think so. The pressure out here is super intense but manageable for other aliens if you have a suit",
+      "choices": [
+        {
+          "text": "Oh that's very interesting. Gravity must be pretty high then as well",
+          "next": "gravity"
+        },
+        {
+          "text": "That's so interesting. Do you think humans would be able to acclimate to the gravity there",
+          "next": "humans"
+        }
+      ]
+    },
+    "humans": {
+      "ending": "bad",
+      "text": "I dont surround myself with people who are worried about humans bye"
+    },
+    "gravity": {
+      "text": "You would think right? Actually gravity is only 3.37 so everything is pretty light here.",
+      "choices": [
+        {
+          "text": "wow i suppose everything would be pretty light at that gravity. Does water just float around everywhere haha",
+          "next": "Water"
+        },
+        {
+          "text": "Wow that's way less than the gravity you would experience on earth",
+          "next": "earthling"
+        }
+      ]
+    },
+    "earthling": {
+      "ending": "bad",
+      "text": "I dont think i can be with someone who is concerned about humans sorry."
+    },
+    "Water": {
+      "ending": "good",
+      "text": "Haha that would be cool, but no all the water here is frozen underground."
+    }
+  }
+}
