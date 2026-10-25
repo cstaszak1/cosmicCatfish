@@ -20,8 +20,10 @@
 
 .intro h1 {
   font-size: 5rem;
+  letter-spacing: 2.5px;
   color: white;
   margin-bottom: 2rem;
+  padding: 30px;
 }
 
 .start-button {
