@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Intro.css";
 
+
 export default function Intro() {
   return (
     <main className="intro" style={{ backgroundImage: "url('/space.jpg')" }}>
@@ -10,6 +11,12 @@ export default function Intro() {
           Start Mission
         </Link>
       </div>
+      
+
+
+
+
+
     </main>
   );
 }

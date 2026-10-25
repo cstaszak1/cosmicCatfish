@@ -37,3 +37,15 @@
 .start-button:hover {
   background-color: #db2777;
 }
+
+   .intro { gap: 4rem; }
+
+   .intro-character {
+     width: min(30vw, 340px);
+     flex-shrink: 0;
+   }
+
+   @media (max-width: 800px) {
+     .intro { flex-direction: column; gap: 1.5rem; }
+     .intro-character { width: min(60vw, 260px); }
+   }
