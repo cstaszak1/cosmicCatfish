@@ -1,0 +1,107 @@
+.dating-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17171f;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.phone-frame {
+  width: 400px;
+  max-width: 100%;
+  border: 8px solid #34313f;
+  border-radius: 40px;
+  padding: 8px;
+  background-color: #34313f;
+  box-sizing: border-box;
+}
+
+.phone-screen {
+  background-color: white;
+  color: #242424;
+  border-radius: 30px;
+  padding: 24px;
+  text-align: center;
+}
+
+.phone-screen h1 {
+  color: #ec4899;
+  font-size: 40px;
+  margin: 8px 0;
+}
+
+.phone-screen h4 {
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+
+.alien-picture img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  background-color: #e9daf7;
+  border-radius: 16px;
+}
+
+.profile-header p {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+.profile-header {
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.profile-header h2 {
+  color: #242424;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.profile-details {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.profile-details p {
+  margin: 6px 0;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.dating-actions {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.dating-actions button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.dating-actions .like-button {
+  background-color: #fce2f0;
+  color: #ec4899;
+}
+
+.dating-actions .pass-button {
+  background-color: #ffe1e6;
+  color: #d94d65;
+}
+
+.dating-actions button:hover {
+  transform: scale(1.1);
+}
