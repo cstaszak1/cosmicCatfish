@@ -16,12 +16,12 @@ Cosmic Catfish is an interactive, space-themed dating game that combines humor, 
 
 Our goal was to make learning about space more engaging by turning research and discovery into a fun, interactive experience. The game also connects to the hackathon's space survivability theme by highlighting the importance of accurate information when exploring unfamiliar environments.
 
-# Tools and Technologies
+### Tools and Technologies
 We built Cosmic Catfish using React, JavaScript, Vite, CSS, React Router, with GitHub for collaboration and version control.
 
 Our project started with the standard Vite React boilerplate, which we customized to create our game.
 
-# AI Usage Disclosure
+### AI Usage Disclosure
 We used AI primarily as a learning and debugging tool to better understand concepts, troubleshoot errors, and improve our code. AI also assisted with some styling and game-logic components, which we adapted and integrated into our project.
 
 The concept, creative direction, and overall game experience were developed collaboratively by our team.
@@ -37,29 +37,31 @@ To build and run Cosmic Catfish locally, you'll need:
 ## Build from source
 Follow these steps to run Cosmic Catfish locally:
 
- # 1. Clone the repository
+ ### 1. Clone the repository
  Open your terminal and run:
  **git clone <https://github.com/cstaszak1/cosmicCatfish>**
 
- # 2. Navigate to the project folder
+ ### 2. Navigate to the project folder
  Make sure you're in the directory containing package.json.
  **cd cosmic-catfish**
  **cd CosmicCatfish/cosmic-catfish**
 
- # 3. Install dependencies
+ ### 3. Install dependencies
  **npm install**
 
- # 4. Start the development server
+ ### 4. Start the development server
  **npm run dev**
 
- # 5. Open the application
+ ### 5. Open the application
  Open the local URL displayed in your terminal (typically http://localhost:5173/) to start playing!
   
 ## Production Build
 To create a production-ready build, run:
+
 **npm run build**
 
 This generates a dist folder containing the compiled application.
 
 To preview the production locally, run:
+
 **npm run preview**
