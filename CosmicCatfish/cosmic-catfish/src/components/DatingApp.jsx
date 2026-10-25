@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import aliens from "../data/aliens.json";
 import { useState } from "react";
 import "./datingApp.css";
+import AlienVisuals from  "./AlienVisuals"
 
 export default function DatingApp() {
   const alienProfiles = Object.values(aliens.Profiles);
@@ -27,7 +28,7 @@ export default function DatingApp() {
           <h4>Find your cosmic connection</h4>
 
           <div className="alien-picture">
-            <img src={currentAlien.image} alt="Alien picture"></img>
+            <AlienVisuals alien = {currentAlien}/>
           </div>
 
           <div className="profile-details">

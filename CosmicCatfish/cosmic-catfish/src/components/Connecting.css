@@ -37,6 +37,12 @@
   background: transparent;
 }
 
+connecting-screen .alien-picture svg {
+  width: auto !important;
+  height: 100%;
+  max-width: 100%;
+}
+
 .connecting-screen .profile-details {
   text-align: center;
   margin-top: auto;

@@ -1,12 +1,19 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import "./datingApp.css";
 import "./Connecting.css";
+import AlienVisuals from "./AlienVisuals";
+
 
 export default function Connecting() {
   const navigate = useNavigate();
   const location = useLocation();
 
   const currentAlien = location.state?.alien;
+
+
+if (!currentAlien) {
+    return <p style={{ color: "white" }}>No alien selected. Go back to the dating app.</p>;
+  }
 
   function handleLike() {
     navigate("/chat", {
@@ -28,7 +35,7 @@ export default function Connecting() {
           <h4>Find your cosmic connection</h4>
 
           <div className="alien-picture">
-            <img src={currentAlien.image} alt="Alien picture"></img>
+            <AlienVisuals alien={currentAlien} />
           </div>
 
           <div className="profile-details">
