@@ -1,17 +1,21 @@
 let dialouge = {};
 let aliens = {};
+let cutscene = [];
+let cutsceneIndex = 0;
 
 
 Promise.all([
     fetch("Data/planets.json").then(res => res.json()),
     fetch("Data/Alien.json").then(res=>res.json()),
-    fetch("Data/Dialouge/Alien1.json").then(res=>res.json())
+    fetch("Data/Dialouge/Alien1.json").then(res=>res.json()),
+    fetch("Data/Dialouge/cutscene.json").then(res=>res.json())
 ])
-    .then(([planetData,AlienData,dialougeData])=> {
+    .then(([planetData,AlienData,dialougeData,cutsceneData])=> {
         const planets = planetData.planetInformation;
         const profiles = AlienData.Profiles;
         dialouge = dialougeData;
         aliens = profiles;
+        cutscene = cutsceneData.lines;
         console.log(planets,profiles,dialouge);
         let html="";
 
@@ -50,6 +54,7 @@ document.getElementById("output").innerHTML = html;
             profileHTML += "<button onclick=\"startDate('" + key + "')\">Go on a date</button>";
         }
         document.getElementById("profiles").innerHTML=profileHTML;
+        showCutscene();
     });
 function startDate(alienKey) {
     showScene(alienKey, "start")
@@ -64,7 +69,7 @@ function showScene(alienKey, sceneID) {
 
     const scene = dialouge[alienKey][sceneID];
 
-    let html = "<h2>Date with"+aliens[alienKey].Name+"</h2>";
+    let html = "<h2>Date with "+aliens[alienKey].Name+"</h2>";
     html += "<p>"+scene.text+"</p>";
 
     if(scene.ending) {
@@ -81,6 +86,39 @@ function showScene(alienKey, sceneID) {
         html += "<button onclick=\"showScene('"+ alienKey + "', '"+ choice.next + "')\">" + choice.text + "</button>";
     }
     dateNum.innerHTML = html;
-
 }
+function showCutscene(){
+    const box = document.getElementById("cutscene");
+    const line = cutscene[cutsceneIndex];
+    const last = cutsceneIndex === cutscene.length -1;
 
+    let button =""
+    if(last){
+        button = "<button class='cutscene-btn' onclick='startGame()'>Start mission</button>"
+    }else{
+        button = "<button class = 'cutscene-btn' onclick='nextLine()'>Next</button>"
+    }
+
+
+let html = "<div class='cutscene-box'>";
+     html += "<div class ='stage'>";
+html += "<img class ='char char-left' src='Images/agent.png' alt=''>";
+html += "<img class = 'char char-right' src='Image/commander.png'alt=''>"
+html += "</div>";
+html +="<div class ='dialouge-box'>";
+html += "<p class ='speaker-name'>" + line.speaker + "</p>";
+html += "<p class = 'speech-text'>" + line.text + "</p>";
+    html += button;
+    html += "</div>";
+    html += "</div>";
+
+box.innerHTML = html;
+}
+function nextLine(){
+    cutsceneIndex++;
+    showCutscene();
+}
+function startGame(){
+    document.getElementById("cutscene").style.display = "none";
+    document.getElementById("game").style.display = "block";
+}

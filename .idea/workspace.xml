@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="230e2211-a9c0-4dee-8c0e-0b8fbb06a6d6" name="Changes" comment="added profiles to json">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Dialouge/Alien1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Alien.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Alien.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Dialoug/Venus.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cutscene_act/cutscene.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Dialouge/cutscene.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/planetIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/planetIndex.html" afterDir="false" />
     </list>
@@ -25,6 +21,7 @@
       <list>
         <option value="HTML File" />
         <option value="tsconfig.json" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -65,6 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +75,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cstas\WebstormProjects\untitled1\JS" />
+      <recent name="C:\Users\cstas\WebstormProjects\untitled1\Cutscene_act" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -93,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1792807119006</updated>
-      <workItem from="1792807120351" duration="31618000" />
+      <workItem from="1792807120351" duration="41703000" />
     </task>
     <task id="LOCAL-00001" summary="added profiles to json">
       <option name="closed" value="true" />

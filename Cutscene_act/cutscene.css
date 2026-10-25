@@ -1,0 +1,73 @@
+#cutscene {
+    position: fixed;
+    inset: 0;
+    background: #0b0d2a;
+}
+
+.cutscene-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* top area: the characters */
+.stage {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0 5%;
+    min-height: 0;
+}
+
+.char {
+    max-height: 90%;
+    max-width: 40%;
+    object-fit: contain;
+}
+
+/* mirrors the right character so they face each other.
+   Delete this rule if the art already faces the right way. */
+.char-right {
+    transform: scaleX(-1);
+}
+
+/* bottom area: the dialogue */
+.dialogue-box {
+    background: rgba(10, 14, 50, 0.95);
+    border-top: 3px solid #6c8cff;
+    padding: 24px 6%;
+    min-height: 28%;
+    box-sizing: border-box;
+}
+
+.speaker-name {
+    margin: 0 0 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffd166;
+}
+
+.speech-text {
+    margin: 0 0 16px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.cutscene-btn {
+    display: block;
+    margin-left: auto;
+    padding: 10px 26px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(135deg, #6c8cff, #9b5cff);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.cutscene-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(155, 92, 255, 0.7);
+}
