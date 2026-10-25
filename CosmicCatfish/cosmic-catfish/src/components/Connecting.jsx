@@ -9,15 +9,15 @@ export default function Connecting() {
   const currentAlien = location.state?.alien;
 
   function handleLike() {
-    navigate("/chat", {
-      state: { alien: currentAlien },
-    });
+    if (!currentAlien) return;
+
+    const chatID = currentAlien.id === "Alien3" ? "Zorp" : currentAlien.id;
+
+    navigate(`/chat/${chatID}`);
   }
 
   function handlePass() {
-    navigate("/dating", {
-      state: { alien: currentAlien },
-    });
+    navigate("/dating");
   }
 
   return (

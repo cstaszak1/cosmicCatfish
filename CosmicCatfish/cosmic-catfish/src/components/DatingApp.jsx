@@ -4,7 +4,12 @@ import { useState } from "react";
 import "./datingApp.css";
 
 export default function DatingApp() {
-  const alienProfiles = Object.values(aliens.Profiles);
+  const alienProfiles = Object.entries(aliens.Profiles).map(
+    ([id, profile]) => ({
+      ...profile,
+      id,
+    }),
+  );
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentAlien = alienProfiles[currentIndex];
 

@@ -17,7 +17,7 @@ export default function MissionComplete() {
       name: "Oxygen",
       icon: "💨",
       description:
-        "MOXIE-like technology can produce oxygen from carbon dioxide in the Martian atmosphere.",
+        "Special machines can extract oxygen from Mars's carbon dioxide-rich atmosphere, providing breathable air for humans inside their habitats.",
     },
     {
       name: "Water",
