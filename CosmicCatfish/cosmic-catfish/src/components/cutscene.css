@@ -1,0 +1,137 @@
+/* Full-screen cutscene */
+.cutscene-page {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background: #7c7e96;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Main cutscene container */
+.cutscene-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top area: characters */
+.stage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px 5% 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Character images */
+.char {
+  max-height: 90%;
+  max-width: 40%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mirror the right character */
+.char-right {
+  transform: scaleX(-1);
+}
+
+/* Bottom area: dialogue */
+.dialogue-box {
+  flex-shrink: 0;
+  width: 100%;
+  background: rgba(10, 14, 50, 0.95);
+  border-top: 3px solid #6c8cff;
+  padding: 24px 6%;
+  min-height: 28%;
+  box-sizing: border-box;
+}
+
+/* Speaker name */
+.speaker-name {
+  margin: 0 0 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffd166;
+  text-transform: uppercase;
+}
+
+/* Dialogue text */
+.speech-text {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Next / Start Mission button */
+.cutscene-btn {
+  display: block;
+  margin-left: auto;
+  padding: 10px 26px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6c8cff, #9b5cff);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cutscene-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(155, 92, 255, 0.7);
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .stage {
+    padding: 10px 3% 0;
+  }
+
+  .char {
+    max-width: 48%;
+    max-height: 85%;
+  }
+
+  .dialogue-box {
+    padding: 18px 5%;
+  }
+
+  .speaker-name {
+    font-size: 1rem;
+  }
+
+  .speech-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .cutscene-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+.char-left {
+  width: 300px;
+  max-width: 45%;
+  flex-shrink: 0;
+}
+
+.char-left svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

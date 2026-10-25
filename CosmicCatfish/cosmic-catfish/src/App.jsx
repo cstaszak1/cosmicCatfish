@@ -8,6 +8,7 @@ import MissionComplete from "./components/MissionComplete";
 import Outro from "./components/EndingPage";
 import Chat from "./components/Chat";
 import GameOver from "./components/GameOver";
+import Cutscene from "./components/Cutscene";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/dating" element={<DatingApp />} />
         <Route path="/connecting" element={<Connecting />} />
         <Route path="/backstory" element={<BackStory />} />
+        <Route path="/cutscene" element={<Cutscene />} />
         <Route path="/report" element={<MissionReport />} />
         <Route path="/chat/:alienID" element={<Chat />} />
         <Route path="/mission-complete" element={<MissionComplete />} />

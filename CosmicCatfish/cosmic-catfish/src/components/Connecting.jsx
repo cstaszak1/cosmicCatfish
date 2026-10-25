@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
+import AlienVisuals from "./AlienVisuals";
 import "./datingApp.css";
 import "./Connecting.css";
 
@@ -28,7 +29,7 @@ export default function Connecting() {
           <h4>Find your cosmic connection</h4>
 
           <div className="alien-picture">
-            <img src={currentAlien.image} alt="Alien picture"></img>
+            <AlienVisuals alien={currentAlien} />
           </div>
 
           <div className="profile-details">

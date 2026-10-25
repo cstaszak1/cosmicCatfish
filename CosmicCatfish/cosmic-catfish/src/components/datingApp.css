@@ -37,6 +37,17 @@
   margin: 0 0 12px;
 }
 
+.alien-picture {
+  width: 100%;
+  height: 170px;
+  background-color: #e9daf7;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .alien-picture img {
   width: 100%;
   height: 170px;

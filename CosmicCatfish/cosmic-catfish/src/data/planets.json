@@ -1,0 +1,60 @@
+{
+  "planetInformation": {
+    "Venus": {
+      "name": "Venus",
+      "assumptions": [
+        {
+          "claim": "earths sister planet is must be pretty easy to grow crops here",
+          "truth": "No, with the thick CO2 atmosphere it is way to hot",
+          "isFalse": true
+        },
+        {
+          "claim": "You must get a lot of visitors from earth since they are so similar",
+          "truth": "No, with the pressure being 93 times greater people on earth dont get around well.",
+          "isFalse": true
+        },
+        {
+          "claim": "Well since venus has an atmosphere animals from earth would probably do well here",
+          "truth": "Well yes there is an atmosphere ,but it is made of 96% carbon dioxide so not many animals could survive",
+          "isFalse": true
+        }
+      ],
+      "data": {
+        "temp_c": 467,
+        "at_pressure": 93,
+        "su_gravity": 8.87,
+        "Water": "trace",
+        "waterStat": "Small amounts of vapor",
+        "atmosphere": { "CO2": 96.5, "N2": 3.5 }
+      }
+    },
+    "Mars": {
+      "name": "Mars",
+      "assumptions": [
+        {
+          "claim": "Since its so far from the sun it must be way to cold to live here",
+          "truth": "It is pretty cold but the temperature varies a lot and can get up to 27c",
+          "isFalse": true
+        },
+        {
+          "claim": "Since the pressure is so low it must be pretty lonely",
+          "truth": "not quite suits and domes designed to handel pressure make the place habitable",
+          "isFalse": true
+        },
+        {
+          "claim": "Since the gravity is so low must be hard for people to visit",
+          "truth": "Not quite, since there is a gravataional pull it just lets us jump higher and life heaveier",
+          "isFalse": true
+        }
+      ],
+      "data": {
+        "temp_c": -63,
+        "at_pressure": 7,
+        "su_gravity": 3.73,
+        "Water": "ice",
+        "waterStat": "frozen water underground",
+        "atmosphere": { "CO2": 96, "N2": 2, "Ar": 2 }
+      }
+    }
+  }
+}

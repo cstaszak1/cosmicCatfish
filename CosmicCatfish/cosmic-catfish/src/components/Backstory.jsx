@@ -37,7 +37,7 @@ export default function BackStory() {
 
         <button
           className="story-button pixelify-sans"
-          onClick={() => navigate("/report")}
+          onClick={() => navigate("/cutscene")}
           type="button"
         >
           Next
