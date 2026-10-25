@@ -17,7 +17,7 @@ Cosmic Catfish is an interactive, space-themed dating game that combines humor, 
 Our goal was to make learning about space more engaging by turning research and discovery into a fun, interactive experience. The game also connects to the hackathon's space survivability theme by highlighting the importance of accurate information when exploring unfamiliar environments.
 
 ### Tools and Technologies
-We built Cosmic Catfish using React, Vite, CSS, React Router, with GitHub for collaboration and version control.
+We built Cosmic Catfish using React, Vite, SVG for graphics, CSS, React Router, with GitHub for collaboration and version control.
 
 Our project started with the standard Vite React boilerplate, which we customized to create our game.
 
